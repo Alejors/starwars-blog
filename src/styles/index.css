@@ -1,3 +1,16 @@
-/* 
-    General Styles
-*/
+@font-face {
+    font-family: 'Star Jedi';
+    src: url(/home/alejo/.local/share/fonts/Starjedi.ttf) format('ttf');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+*{
+    color: yellow;
+    font-family: 'Star Jedi';
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80);
+}
