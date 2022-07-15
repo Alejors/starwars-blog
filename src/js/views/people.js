@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Cards } from "../component/cards";
 
 import { Context } from "../store/appContext";
 
@@ -8,18 +9,16 @@ export const People = () => {
 
 	return (
 		<div className="container">
-			<ul className="list-group">
-				<li className="list-group-item d-flex justify-content-between">
-					<span>Link</span>
-					<button className="btn btn-success">
-						Change Color
-					</button>
-				</li>
-			</ul>
-			<br />
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
+			<h1>people</h1>
+			<div className="row row-cols-1 row-cols-md-2 g-4">
+				{!!store.people &&
+					store.people.length > 0 &&
+					store.people.map((item, i) => (
+						<Cards item={item} i={i} />
+					)
+					)
+				}
+			</div>
 		</div>
 	);
 };

@@ -9,6 +9,8 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Vehicles } from "./views/vehicles";
+import { Planets } from "./views/planets";
 
 const Layout = () => {
 	const basename = process.env.BASENAME || "";
@@ -24,6 +26,12 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/people">
 							<People />
+						</Route>
+						<Route exact path="/vehicles">
+							<Vehicles />
+						</Route>
+						<Route exact path="/planets">
+							<Planets />
 						</Route>
 						<Route>
 							<Error />
