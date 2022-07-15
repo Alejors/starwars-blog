@@ -1,0 +1,9 @@
+div img{
+        width: 300px;
+        height: 300px;
+    }
+
+h5, p{
+    color: white;
+    text-shadow: 1px 1px black;
+}
