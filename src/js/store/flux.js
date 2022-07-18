@@ -18,29 +18,29 @@ const getState = ({ getStore, getActions, setStore }) => {
 				],
 				vehicles: [
 					{
-						'name': 'x-34 speeder',
+						'name': 'X-34 Speeder',
 						'url': 'https://i.pinimg.com/originals/c4/33/59/c4335925398a9f9970ae913953e09982.jpg'
 					},
 					{
-						'name': 'tie bomber',
+						'name': 'Tie Bomber',
 						'url': 'https://i.ebayimg.com/images/g/MEQAAOSwjq9b0q2Z/s-l500.jpg'
 					},
 					{
-						'name': 'x-wing',
+						'name': 'X-Wing',
 						'url': 'https://media.contentapi.ea.com/content/dam/star-wars-battlefront-2/images/2019/08/swbf2-refresh-hero-medium-vehicles-page-x-wing-7x2-xl.jpg.adapt.crop16x9.320w.jpg'
 					}
 				],
 				planets: [
 					{
-						'name': 'tatooine',
+						'name': 'Tatooine',
 						'url': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2015/03/Tatooine.jpg?fit=1280%2C719&quality=80&ssl=1'
 					},
 					{
-						'name': 'alderaan',
+						'name': 'Alderaan',
 						'url': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyakCpeUriTFiEWXpLWOoI8pkdXv4u7Wmcww&usqp=CAU'
 					},
 					{
-						'name': 'naboo',
+						'name': 'Naboo',
 						'url': 'https://sm.ign.com/ign_latam/screenshot/default/nabo_ya2r.jpg'
 					}
 				]

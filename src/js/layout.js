@@ -11,6 +11,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Vehicles } from "./views/vehicles";
 import { Planets } from "./views/planets";
+import { Individual } from "./views/individual";
 
 const Layout = () => {
 	const basename = process.env.BASENAME || "";
@@ -32,6 +33,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/planets">
 							<Planets />
+						</Route>
+						<Route exact path="/:who/:where">
+							<Individual />
 						</Route>
 						<Route>
 							<Error />

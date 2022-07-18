@@ -14,7 +14,7 @@ export const People = () => {
 				{!!store.people &&
 					store.people.length > 0 &&
 					store.people.map((item, i) => (
-						<Cards item={item} i={i} />
+						<Cards key={i} location={'people'} item={item} index={i} />
 					)
 					)
 				}
