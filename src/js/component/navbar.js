@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+  const { store, actions } = useContext(Context);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container-fluid">
@@ -27,30 +30,23 @@ export const Navbar = () => {
           </div>
         </div>
         <span className="nav-item dropdown float-right">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-            Favorites <span className="badge bg-dark">0</span>
+          <a className="nav-link dropdown-toggle text-alert" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            Favorites <span className="badge bg-dark">{store.favorites.length}</span>
           </a>
 
-          {/* PENDIENTE RENDERIZADO CONDICIONADO SEGUN LISTADO DE FAVORITOS */}
           <ul className="dropdown-menu dropdown-menu-end">
-            <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
+            {store.favorites == 0 ?
+              (<li className="dropdown-item text-center">(None)</li>) :
+              (store.favorites.map((ele, i) => (
+                <li className="dropdown-item" key={i}>
+                  <Link to={ele.url}>
+                    {ele.name}
+                  </Link>
+                  <span className="btn btn-secondary btn-sm ms-2" onClick={() => actions.deleteFavorite(i)}><i className="fas fa-trash-alt"></i></span>
+                </li>
+              ))
+              )
+            }
           </ul>
         </span>
       </div>

@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Cards = ({ item, index, location }) => {
     const attributes = Object.keys(item);
+    const { actions } = useContext(Context);
 
     return (
         <div className="col">
@@ -25,7 +27,7 @@ export const Cards = ({ item, index, location }) => {
                         <div className="d-flex">
                             <Link to={`/${location}/${index}`} className="btn btn-secondary">Learn more</Link>
                             <div className="ms-auto">
-                                <Link to="/#" className="btn btn-secondary"><i className="fas fa-heart"></i></Link>
+                                <button className="btn btn-secondary" onClick={() => actions.addFavorite(location, index, `${item.name}`)} ><i className="fas fa-heart"></i></button>
                             </div>
                         </div>
                     </div>

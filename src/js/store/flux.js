@@ -1,6 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			counter: 2,
 			images: {
 				people: [
 					{
@@ -44,7 +45,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						'url': 'https://sm.ign.com/ign_latam/screenshot/default/nabo_ya2r.jpg'
 					}
 				]
-			}
+			},
+			favorites: []
 		},
 		actions: {
 			loadData: (detail) => {
@@ -61,20 +63,43 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => console.log(error));
 			},
-			counter: 2,
 			loadMore: (detail) => {
+				const store = getStore();
+
 				fetch('https://swapi.dev/api/' + detail + '?page=' + counter)
-				.then(response => response.json())
-				.then(data => setStore({[detail]: data.results}))
-				.catch(error => console.log(error));
-				counter+= 1;
+					.then(response => response.json())
+					.then(data => setStore({ [detail]: data.results }))
+					.catch(error => console.log(error));
+				store.counter += 1;
 			},
 			loadLess: (detail) => {
-				counter-= 2;
+				const store = getStore();
+
+				store.counter -= 2;
 				fetch('https://swapi.dev/api/' + detail + '?page=' + counter)
-				.then(response => response.json())
-				.then(data => setStore({[detail]: data.results}))
-				.catch(error => console.log(error));
+					.then(response => response.json())
+					.then(data => setStore({ [detail]: data.results }))
+					.catch(error => console.log(error));
+			},
+			addFavorite: (location, index) => {
+				const store = getStore();
+				const aux = store.favorites;
+				const favorite = {
+					'name': `${store[location][index].name}`,
+					'url': `/${location}/${index}`
+				};
+				if (!store.favorites.includes({favorite})) {
+					console.log(store.favorites.includes({favorite}));
+					aux.push(favorite);
+					setStore(aux);
+				}
+			},
+			deleteFavorite: (index) => {
+				const store = getStore();
+				const aux = [...store.favorites];
+				aux[index] = null;
+				const filtered = aux.filter(ele => ele !== null);
+				setStore(store.favorites = filtered)
 			}
 		}
 	}

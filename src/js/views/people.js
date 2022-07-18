@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 import { Cards } from "../component/cards";
 
 import { Context } from "../store/appContext";
 
 export const People = () => {
-	const { store, actions } = useContext(Context);
+	const { store } = useContext(Context);
 
 	return (
 		<div className="container">

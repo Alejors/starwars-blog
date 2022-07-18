@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import { Cards } from "../component/cards";
 
 import { Context } from "../store/appContext";
@@ -19,6 +18,7 @@ export const Vehicles = () => {
 				)
 			}
 		</div>
+		<a onClick={() => actions.loadMore()}>Load more...</a>
 	</div>
 	);
 };
