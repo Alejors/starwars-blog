@@ -24,3 +24,7 @@ body{
     width: 600px;
     height:400px;
 }
+
+#individualinfo{
+    max-height: 400px;
+}

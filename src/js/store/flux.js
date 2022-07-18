@@ -63,24 +63,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => console.log(error));
 			},
-			loadMore: (detail) => {
-				const store = getStore();
-
-				fetch('https://swapi.dev/api/' + detail + '?page=' + counter)
-					.then(response => response.json())
-					.then(data => setStore({ [detail]: data.results }))
-					.catch(error => console.log(error));
-				store.counter += 1;
-			},
-			loadLess: (detail) => {
-				const store = getStore();
-
-				store.counter -= 2;
-				fetch('https://swapi.dev/api/' + detail + '?page=' + counter)
-					.then(response => response.json())
-					.then(data => setStore({ [detail]: data.results }))
-					.catch(error => console.log(error));
-			},
 			addFavorite: (location, index) => {
 				const store = getStore();
 				const aux = store.favorites;
