@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import { Cards } from "../component/cards";
 
 import { Context } from "../store/appContext";
@@ -19,6 +18,10 @@ export const Planets = () => {
 				)
 			}
 		</div>
+		{store.counter.planets < 7 ?
+				<button type="button" className="btn btn-primary btn-secondary mt-2" onClick={() => actions.loadmore('planets')}>Load more...</button>:
+				null
+			}
 	</div>
 	);
 };

@@ -1,7 +1,11 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			counter: 2,
+			counter: {
+				people: 2,
+				vehicles: 2,
+				planets: 2
+			},
 			images: {
 				people: [
 					{
@@ -59,6 +63,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 				)
 					.then(response => response.json())
 					.then(data => {
+						return (data)
+					})
+					.then(async (data) => {
+						const { results } = data;
+						results.forEach(async (element, index) => {
+							{if(element.homeworld !== undefined){
+								const resp = await fetch(element.homeworld);
+								const info = await resp.json();
+								data.results[index].homeworld = info.name;
+							}
+							}
+						})
 						setStore({ [detail]: data.results });
 					})
 					.catch(error => console.log(error));
@@ -70,10 +86,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					'name': `${store[location][index].name}`,
 					'url': `/${location}/${index}`
 				};
-				if (!store.favorites.includes({favorite})) {
-					console.log(store.favorites.includes({favorite}));
-					aux.push(favorite);
-					setStore(aux);
+				let found = aux.find((element) => element.name == favorite.name);
+				if(!found){
+				aux.push(favorite);
+				setStore({ favorites: aux });
 				}
 			},
 			deleteFavorite: (index) => {
@@ -81,7 +97,29 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const aux = [...store.favorites];
 				aux[index] = null;
 				const filtered = aux.filter(ele => ele !== null);
-				setStore(store.favorites = filtered)
+				setStore({ favorites: filtered })
+			},
+			loadmore: (type) => {
+				const store = getStore();
+				const counter = store.counter[type];
+
+				fetch(`https://swapi.dev/api/` + type + `/?page=` + `${counter}`)
+					.then(response => response.json())
+					.then(async (data) => {
+						const { results } = data;
+						results.forEach(async (element, index) => {
+							{if(element.homeworld !== undefined){
+								const resp = await fetch(element.homeworld);
+								const info = await resp.json();
+								data.results[index].homeworld = info.name;
+							}
+							}
+						})
+						const aux = [...store[type], ...data.results];
+						setStore({ [type]: aux });
+					})
+					.catch(error => console.log(error));
+				setStore(store.counter[type] = counter + 1);
 			}
 		}
 	}

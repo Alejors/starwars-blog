@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Cards } from "../component/cards";
 
 import { Context } from "../store/appContext";
 
 export const People = () => {
-	const { store } = useContext(Context);
+	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container">
@@ -18,6 +18,10 @@ export const People = () => {
 					)
 				}
 			</div>
+			{store.counter.people < 10 ?
+				<button type="button" className="btn btn-primary btn-secondary mt-2" onClick={() => actions.loadmore('people')}>Load more...</button>:
+				null
+			}
 		</div>
 	);
 };

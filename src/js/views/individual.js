@@ -10,7 +10,6 @@ export const Individual = props => {
     const history = useHistory();
     const attributes = Object.keys(store[params.who][params.where]);
     const filteredattributes = attributes.filter((ele, id) => id < 9);
-    console.log(filteredattributes);
 
     return (
         <div className="container-fluid">

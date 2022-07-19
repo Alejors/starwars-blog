@@ -18,7 +18,10 @@ export const Vehicles = () => {
 				)
 			}
 		</div>
-		<a onClick={() => actions.loadMore()}>Load more...</a>
+		{store.counter.vehicles < 5 ?
+				<button type="button" className="btn btn-primary btn-secondary mt-2" onClick={() => actions.loadmore('vehicles')}>Load more...</button>:
+				null
+			}
 	</div>
 	);
 };
