@@ -38,7 +38,7 @@ export const Navbar = () => {
             {store.favorites == 0 ?
               (<li className="dropdown-item text-center">(None)</li>) :
               (store.favorites.map((ele, i) => (
-                <li className="dropdown-item" key={i}>
+                <li className="d-flex dropdown-item justify-content-between" key={i}>
                   <Link to={ele.url}>
                     {ele.name}
                   </Link>
