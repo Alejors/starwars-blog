@@ -50,7 +50,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 				]
 			},
-			favorites: []
+			favorites: [],
+			liked: []
 		},
 		actions: {
 			loadData: (detail) => {
@@ -79,8 +80,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => console.log(error));
 			},
+
 			addFavorite: (location, index) => {
 				const store = getStore();
+				const actions = getActions();
 				const aux = store.favorites;
 				const favorite = {
 					'name': `${store[location][index].name}`,
@@ -90,15 +93,30 @@ const getState = ({ getStore, getActions, setStore }) => {
 				if(!found){
 				aux.push(favorite);
 				setStore({ favorites: aux });
+				actions.includeliked(location, index);
 				}
 			},
+
 			deleteFavorite: (index) => {
 				const store = getStore();
 				const aux = [...store.favorites];
+				const favaux = aux[index].url.replace(/\//g,"");
 				aux[index] = null;
 				const filtered = aux.filter(ele => ele !== null);
-				setStore({ favorites: filtered })
+				setStore({ favorites: filtered });
+				const likedindex = store.liked.indexOf(favaux);
+				const likedaux = [...store.liked];
+				likedaux[likedindex] = null;
+				const filteredliked = likedaux.filter((ele) => ele != null);
+				setStore({liked: filteredliked});
 			},
+
+			includeliked: (location, index) => {
+				const store = getStore();
+				let like = location+index;
+				store.liked.push(like);
+			},
+			
 			loadmore: (type) => {
 				const store = getStore();
 				const counter = store.counter[type];
