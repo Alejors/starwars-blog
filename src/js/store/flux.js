@@ -99,22 +99,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			deleteFavorite: (index) => {
 				const store = getStore();
+				const actions = getActions();
 				const aux = [...store.favorites];
 				const favaux = aux[index].url.replace(/\//g,"");
 				aux[index] = null;
 				const filtered = aux.filter(ele => ele !== null);
-				setStore({ favorites: filtered });
-				const likedindex = store.liked.indexOf(favaux);
-				const likedaux = [...store.liked];
-				likedaux[likedindex] = null;
-				const filteredliked = likedaux.filter((ele) => ele != null);
-				setStore({liked: filteredliked});
+				actions.deleteliked(favaux);
+				setStore({favorites: filtered});
 			},
 
 			includeliked: (location, index) => {
 				const store = getStore();
 				let like = location+index;
 				store.liked.push(like);
+			},
+
+			deleteliked: (str) => {
+				const store = getStore();
+				const likedindex = store.liked.indexOf(str);
+				const likedaux = [...store.liked];
+				likedaux[likedindex] = null;
+				const filteredliked = likedaux.filter((ele) => ele != null);
+				setStore({ liked: filteredliked })
 			},
 			
 			loadmore: (type) => {
