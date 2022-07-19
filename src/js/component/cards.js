@@ -12,22 +12,24 @@ export const Cards = ({ item, index, location }) => {
                 <img src="https://dummyimage.com/500x300/bdbdbd/fff" className="card-img-top" alt={item.name} />
                 <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
-                    <div className="card-text justify-content-between">
+                    <div className="card-text justify-content-between normaltext">
                         <ul>
                             <li>
-                                {attributes[1]}: {item[attributes[1]]}
+                                {attributes[1].replace(/_/g," ")}: {item[attributes[1]]}
                             </li>
                             <li>
-                                {attributes[2]}: {item[attributes[2]]}
+                                {attributes[2].replace(/_/g," ")}: {item[attributes[2]]}
                             </li>
                             <li>
-                                {attributes[3]}: {item[attributes[3]]}
+                                {attributes[3].replace(/_/g," ")}: {item[attributes[3]]}
                             </li>
                         </ul>
                         <div className="d-flex">
                             <Link to={`/${location}/${index}`} className="btn btn-secondary">Learn more</Link>
                             <div className="ms-auto">
-                                <button className="btn btn-secondary" onClick={() => actions.addFavorite(location, index, `${item.name}`)} ><i className="fas fa-heart"></i></button>
+                                <button className="btn btn-secondary" onClick={() => actions.addFavorite(location, index, `${item.name}`)} >
+                                    <i className="far fa-heart"></i>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ export const Individual = props => {
                         {!!filteredattributes &&
                         filteredattributes.length > 0 && 
                         filteredattributes.map((att, i) => (
-                            <li key={i}><span className="normaltext">{att}: </span><span className="normaltext"> {store[params.who][params.where][att]}</span></li>
+                            <li key={i}><span className="normaltext">{att.replace(/_/g," ")}: </span><span className="normaltext"> {store[params.who][params.where][att]}</span></li>
                         ))}
                     </ul>
                 </div>
