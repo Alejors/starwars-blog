@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Star Jedi';
-    src: url(/home/alejo/.local/share/fonts/Starjedi.ttf) format('ttf');
+    src: url(../../personalized/Starjedi.ttf) format('ttf');
     font-style: normal;
     font-weight: normal;
 
@@ -8,7 +8,7 @@
 
 *{
     color: yellow;
-    font-family: 'Star Jedi';
+    font-family: 'Star Jedi', 'Rubik', sans-serif;
 }
 
 h5, ul li{
