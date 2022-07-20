@@ -5,11 +5,12 @@ import { Context } from "../store/appContext";
 export const Cards = ({ item, index, location }) => {
     const attributes = Object.keys(item);
     const { store, actions } = useContext(Context);
+    const found = store.images[location].find(element => element.name === item.name);
 
     return (
         <div className="col">
             <div className="card bg-dark">
-                <img src="https://dummyimage.com/500x300/bdbdbd/fff" className="card-img-top" alt={item.name} />
+                <img src={found.url} className="card-img-top" alt={item.name} />
                 <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
                     <div className="card-text justify-content-between normaltext">

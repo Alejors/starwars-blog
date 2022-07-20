@@ -10,6 +10,7 @@ export const Individual = props => {
     const history = useHistory();
     const attributes = Object.keys(store[params.who][params.where]);
     const filteredattributes = attributes.filter((ele, id) => id < 9);
+    const found = store.images[params.who].find(element => element.name === store[params.who][params.where].name);
 
     return (
         <div className="container-fluid">
@@ -18,7 +19,7 @@ export const Individual = props => {
             </h1>
             <div id="individualinfo" className="row m-2 bg-secondary bg-opacity-75 overflow-hidden">
                 <div className="col-md-6 px-0">
-                    <img id='individualimage' src="https://dummyimage.com/600x400/bdbdbd/fff" />
+                    <img id='individualimage' src={found.url} />
                 </div>
                 <div className="col-md-6 mt-5">
                     <ul>
