@@ -215,135 +215,135 @@ const getState = ({ getStore, getActions, setStore }) => {
 					},
 					//PAGE 6
 					{
-						'name': '',
-						'url': ''
+						'name': 'Ki-Adi-Mundi',
+						'url': 'http://pm1.narvii.com/6848/de93a9d5778d03167e903a7b50d7834afb6a7fc9v2_00.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Kit Fisto',
+						'url': 'https://www.lafosadelrancor.com/wp-content/uploads/2017/05/Kit-Fisto-LFDR.jpeg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Eeth Koth',
+						'url': 'https://www.cultture.com/pics/2018/08/koth01.png'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Adi Gallia',
+						'url': 'https://pbs.twimg.com/profile_images/3534990862/da15c2223f00bef1ba8104a86acfa959_400x400.jpeg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Saesee Tiin',
+						'url': 'https://pm1.narvii.com/6583/e2e6b1bd0a720cb2548cb1d643bf561f05a9908e_hq.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Yarael Poof',
+						'url': 'https://i.pinimg.com/originals/41/55/1b/41551bad737ac712683caad4c828a940.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Plo Koon',
+						'url': 'http://pm1.narvii.com/6729/25ddf8833f529acf9ea3792f72ac8720e0bc685bv2_00.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Mas Amedda',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/3/3f/Mas12432.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Gregar Typho',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_captainpanaka_01_169_6a3ccac5.jpeg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Cordé',
+						'url': 'https://pbs.twimg.com/media/E0AgK9dWEAE023T.jpg'
 					},
 					//PAGE 7
 					{
-						'name': '',
-						'url': ''
+						'name': 'Cliegg Lars',
+						'url': 'https://m.media-amazon.com/images/I/51iKq7WmwTL._AC_SX679_.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Poggle the Lesser',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_pogglethelesser_01_169_7095ae3c.jpeg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Luminara Unduli',
+						'url': 'https://p4.wallpaperbetter.com/wallpaper/864/953/251/star-wars-bracelet-green-lightsaber-headdress-wallpaper-preview.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Barriss Offee',
+						'url': 'https://pm1.narvii.com/6213/b35d09706375442b61d9bef97a94ae635aaacfc9_hq.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Dormé',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/8/8a/Dorme-SWCT.png'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Dooku',
+						'url': 'https://super-ficcion.com/wp-content/uploads/2020/05/count_dookus-1.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Bail Prestor Organa',
+						'url': 'https://pm1.narvii.com/7514/ee4b5a268def90e20c50fc84d167e8246cc583e9r1-400-320v2_hq.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Jango Fett',
+						'url': 'https://gcdn.lanetaneta.com/wp-content/uploads/2022/02/La-muerte-eliminada-de-Jango-Fett-completada-por-un-fan.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Zam Wesell',
+						'url': 'https://wikidat.com/img/zam-wesell-4b43b7079f24e2d653b3c35fa933c4bb.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Dexter Jettster',
+						'url': 'https://frikipolis.com/wp-content/uploads/2022/05/databank_besalisk_01_169_875a3eee.jpeg'
 					},
 					//PAGE 8
 					{
-						'name': '',
-						'url': ''
+						'name': 'Lama Su',
+						'url': 'https://static.wikia.nocookie.net/star-wars-canon-extended/images/5/5b/Lama_Su1.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Taun We',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/4/43/Taun_We.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Jocasta Nu',
+						'url': 'https://i.pinimg.com/originals/2f/b6/b1/2fb6b1d45ffc135bc5c25d7d6eb49340.png'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'R4-P17',
+						'url': 'https://pbs.twimg.com/media/DklOKnbWwAAByLy.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Wat Tambor',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/e/e8/TamborBoomHeadshot.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'San Hill',
+						'url': 'http://pm1.narvii.com/6625/2647e2a08cdfdbfce5490ad950a4d97abff97336_00.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Shaak Ti',
+						'url': 'https://gcdn.lanetaneta.com/wp-content/uploads/2019/07/Star-Wars-amp-039-Shaak-Ti-El-Maestro-Jedi.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Grievous',
+						'url': 'https://sm.ign.com/t/ign_latam/screenshot/default/clipboard02_c844.1280.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Tarfful',
+						'url': 'https://static.wikia.nocookie.net/starwarsofthecaribbean/images/5/5a/Tarfful_new.jpg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Raymus Antilles',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/8/80/Raymus_card_trader.png'
 					},
 					//PAGE 9
 					{
-						'name': '',
-						'url': ''
+						'name': 'Sly Moore',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/sly-moore_6af90e66.jpeg'
 					},
 					{
-						'name': '',
-						'url': ''
+						'name': 'Tion Medon',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/e/e8/TionMedonchron.jpg'
 					}
 				],
 				vehicles: [
