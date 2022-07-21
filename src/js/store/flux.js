@@ -8,6 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			images: {
 				people: [
+					//PAGE 1
 					{
 						'name': 'Luke Skywalker',
 						'url': 'https://i0.wp.com/wipy.tv/wp-content/uploads/2020/02/Luke-Skywalker-tuvo-otro-lightsaber.jpg'
@@ -47,6 +48,302 @@ const getState = ({ getStore, getActions, setStore }) => {
 					{
 						'name': 'Obi-Wan Kenobi',
 						'url': 'https://mx.web.img3.acsta.net/r_654_368/newsv7/21/06/19/17/33/5124299.png'
+					},
+					//PAGE 2
+					{
+						'name': 'Anakin Skywalker',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/6/6f/Anakin_Skywalker_RotS.png'
+					},
+					{
+						'name': 'Wilhuff Tarkin',
+						'url': 'https://pm1.narvii.com/6351/d3230e4459ce0bee7f0b2771ceb8e4e82ab2fd79_hq.jpg'
+					},
+					{
+						'name': 'Chewbacca',
+						'url': 'https://www.tonica.la/__export/1608834317696/sites/debate/img/2020/12/24/chewbacca-star-wars-legends.jpg'
+					},
+					{
+						'name': 'Han Solo',
+						'url': 'https://im.ziffdavisinternational.com/ign_es/screenshot/default/han-solo-texto_n923.jpg'
+					},
+					{
+						'name': 'Greedo',
+						'url': 'https://pm1.narvii.com/6575/8de2864f4f537b5feafa17b7d241811c74c19746_hq.jpg'
+					},
+					{
+						'name': 'Jabba Desilijic Tiure',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/b/be/Jabba.jpg'
+					},
+					{
+						'name': 'Wedge Antilles',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/5/51/Wedge_Antilles.jpg'
+					},
+					{
+						'name': 'Jek Tono Porkins',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/e/eb/JekPorkins-DB.png'
+					},
+					{
+						'name': 'Yoda',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/4/45/Yoda.jpg'
+					},
+					{
+						'name': 'Palpatine',
+						'url': 'https://www.edeliranoticias.com/wp-content/uploads/2022/03/Star-Wars-He-aqui-por-que-Palpatine-es-un-hereje.png'
+					},
+					//PAGE 3
+					{
+						'name': 'Boba Fett',
+						'url': 'https://www.tonica.la/__export/1607107904135/sites/debate/img/2020/12/04/quien-es-boba-fett.jpg'
+					},
+					{
+						'name': 'IG-88',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/0/0a/IG88_Unleashed.jpg'
+					},
+					{
+						'name': 'Bossk',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png'
+					},
+					{
+						'name': 'Lando Calrissian',
+						'url': 'https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2016/08/12/3-Lando-1536x864-493364302953.jpg'
+					},
+					{
+						'name': 'Lobot',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_lobot_01_169_8a50d7ae.jpeg'
+					},
+					{
+						'name': 'Ackbar',
+						'url': 'https://pbs.twimg.com/profile_images/952953493182144518/NZF4Y6nE_400x400.jpg'
+					},
+					{
+						'name': 'Mon Mothma',
+						'url': 'https://i0.wp.com/modogeeks.com/wp-content/uploads/2016/06/mon-mothma.jpg'
+					},
+					{
+						'name': 'Arvel Crynyd',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/d/de/Arvel-crynyd.jpg'
+					},
+					{
+						'name': 'Wicket Systri Warrick',
+						'url': 'https://upload.wikimedia.org/wikipedia/en/e/ee/Wicket_W_Warrick.png'
+					},
+					{
+						'name': 'Nien Nunb',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/nien-nunb-main_1dbef681.jpeg'
+					},
+					//PAGE 4
+					{
+						'name': 'Qui-Gon Jinn',
+						'url': 'https://sm.ign.com/t/ign_latam/screenshot/default/quigon_kwnb.1280.jpg'
+					},
+					{
+						'name': 'Nute Gunray',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_nutegunray_01_169_9d66ded2.jpeg'
+					},
+					{
+						'name': 'Finis Valorum',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/5/51/ValorumPortrait-SWE.png'
+					},
+					{
+						'name': 'Padmé Amidala',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/0/0d/Reina_Amidala.jpg'
+					},
+					{
+						'name': 'Jar Jar Binks',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_jarjarbinks_01_169_c70767ab.jpeg'
+					},
+					{
+						'name': 'Roos Tarpals',
+						'url': 'https://i.pinimg.com/originals/b3/b6/95/b3b6957f9c7ccc96c3afdf4857c3f4a5.jpg'
+					},
+					{
+						'name': 'Rugor Nass',
+						'url': 'https://medias.spotern.com/spots/w640/60/60361-1532336916.jpg'
+					},
+					{
+						'name': 'Ric Olié',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_ricolie_01_169_f175f81b.jpeg'
+					},
+					{
+						'name': 'Watto',
+						'url': 'https://i.pinimg.com/originals/97/a6/c5/97a6c5f3e61b5d8aea7fa8054ead9ed3.jpg'
+					},
+					{
+						'name': 'Sebulba',
+						'url': 'http://pm1.narvii.com/6595/44fd8dd5f1745703510b566a331ac66fb7f3ab4f_00.jpg'
+					},
+					//PAGE 5
+					{
+						'name': 'Quarsh Panaka',
+						'url': 'https://pm1.narvii.com/7428/1287abadee4ddfafc5ccd7fbbe2a0e6f08839647r1-320-400v2_hq.jpg'
+					},
+					{
+						'name': 'Shmi Skywalker',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/1/17/Shmi_FF.png'
+					},
+					{
+						'name': 'Darth Maul',
+						'url': 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2020/05/star-wars-darth-maul-1945895.jpg'
+					},
+					{
+						'name': 'Bib Fortuna',
+						'url': 'https://www.rebelscum.com/2021/Bib_Fortuna_1.jpg'
+					},
+					{
+						'name': 'Ayla Secura',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/4/4d/Aayla_Secura_SWE.png'
+					},
+					{
+						'name': 'Ratts Tyerel',
+						'url': 'https://www.figurerealm.com/userimages/characterprofiles/3000/2696-1-5a58fd82ca048.jpg'
+					},
+					{
+						'name': 'Dud Bolt',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/7/73/Dud_Bolt_Podracer_Cockpit.png'
+					},
+					{
+						'name': 'Gasgano',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/3/30/Gasgano.jpg'
+					},
+					{
+						'name': 'Ben Quadinaros',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/databank_benquadinaros_01_169_0c77b6a0.jpeg'
+					},
+					{
+						'name': 'Mace Windu',
+						'url': 'https://elvortex.com/wp-content/uploads/2020/09/Mace-Windu-ID.jpg'
+					},
+					//PAGE 6
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					//PAGE 7
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					//PAGE 8
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
+					},
+					//PAGE 9
+					{
+						'name': '',
+						'url': ''
+					},
+					{
+						'name': '',
+						'url': ''
 					}
 				],
 				vehicles: [
@@ -94,6 +391,125 @@ const getState = ({ getStore, getActions, setStore }) => {
 					{
 						'name': 'Sail barge',
 						'url': 'https://i.pinimg.com/736x/14/65/dc/1465dcc8bbd2677eef9b9cb8dc7bf87f--jabbas-palace-jabba-the-hutt.jpg'
+					},
+					//PAGE 2
+					{
+						'name': 'Bantha-II cargo skiff',
+						'url': 'https://static.wikia.nocookie.net/headhuntersholosuite/images/c/ce/Bantha-II_cargo_skiff.jpg'
+					},
+					{
+						'name': 'TIE/IN interceptor',
+						'url': 'https://static.wikia.nocookie.net/battlefront/images/d/d9/TIEinterceptor_Main.jpg'
+					},
+					{
+						'name': 'Imperial Speeder Bike',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/4/47/Speeder_Bike_DICE.png'
+					},
+					{
+						'name': 'Vulture Droid',
+						'url': 'https://i.pinimg.com/originals/9d/b8/df/9db8df72fab1abb2cde2fa98d1005af9.jpg'
+					},
+					{
+						'name': 'Multi-Troop Transport',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/a/ab/MTT_BF2.png'
+					},
+					{
+						'name': 'Armored Assault Tank',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/c/c9/AAT_BF2.png'
+					},
+					{
+						'name': 'Single Trooper Aerial Platform',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/2/28/ST-STAPs.jpg'
+					},
+					{
+						'name': 'C-9979 landing craft',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/f/f0/C9979_ep1ig.jpg'
+					},
+					{
+						'name': 'Tribubble bongo',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/2/2d/Bongo_1.jpg'
+					},
+					{
+						'name': 'Sith speeder',
+						'url': 'https://bbts1.azureedge.net/images/p/full/2017/10/70940dc8-62cb-4f95-aa91-1a680344b8d5.jpg'
+					},
+					//PAGE 3
+					{
+						'name': 'Zephyr-G swoop bike',
+						'url': 'https://cdnb.artstation.com/p/assets/images/images/022/606/397/large/brandon-robinson-robinsonb-assignment-3-exterior-1.jpg'
+					},
+					{
+						'name': 'Koro-2 Exodrive airspeeder',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/2/22/Koro2_uvg.jpg'
+					},
+					{
+						'name': 'XJ-6 airspeeder',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/2/25/Hotrod-NEGVV.jpg'
+					},
+					{
+						'name': 'LAAT/i',
+						'url': 'https://i.pinimg.com/originals/2e/8f/97/2e8f975183de8b01c2c6128d28477506.jpg'
+					},
+					{
+						'name': 'LAAT/c',
+						'url': 'https://i.pinimg.com/originals/b0/09/6c/b0096ca333a8ed697c39a5d90e14d304.jpg'
+					},
+					{
+						'name': 'AT-TE',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/0/0a/ATTE-ST.jpg'
+					},
+					{
+						'name': 'SPHA',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/2/2a/SPHA-T.JPG'
+					},
+					{
+						'name': 'Flitknot speeder',
+						'url': 'http://pm1.narvii.com/7656/0c27ac0d26f2b4b8217d53e63714b1e3ea6aa548r1-701-438v2_uhq.jpg'
+					},
+					{
+						'name': 'Neimoidian shuttle',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/f/fe/Armed_Sheathipede_variant.png'
+					},
+					{
+						'name': 'Geonosian starfighter',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/8/82/Nantex-class_fighters.png'
+					},
+					//PAGE 4
+					{
+						'name': 'Tsmeu-6 personal wheel bike',
+						'url': 'https://4.bp.blogspot.com/-yO5VABQYd7A/Tm1EUXo37aI/AAAAAAAAFAI/ngJ7Yj1VDg8/s1600/vehiculo-starwars.jpg'
+					},
+					{
+						'name': 'Emergency Firespeeder',
+						'url': 'https://3.bp.blogspot.com/-JMCkSEfdGvs/WZWcMG1c0JI/AAAAAAAAHlU/qx8wy9aeAO8SgpwSgDvsO3tCmNFWAmd6ACLcBGAs/s1600/Firespeeders.jpg'
+					},
+					{
+						'name': 'Droid tri-fighter',
+						'url': 'https://media.sketchfab.com/models/2517de834ad7418ea367ecdacd13524c/thumbnails/2cf49cc2919b41f6a3089fd160de3d5c/4fb58fb65f504b3a84b51ce90ab67ed6.jpeg'
+					},
+					{
+						'name': 'Oevvaor jet catamaran',
+						'url': 'https://lumiere-a.akamaihd.net/v1/images/wookiee-catamaran_ae2deacf.jpeg'
+					},
+					{
+						'name': 'Raddaugh Gnasp fluttercraft',
+						'url': 'https://static.wikia.nocookie.net/starwars/images/d/dc/Catamaran.jpg'
+					},
+					{
+						'name': 'Clone turbo tank',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/f/f7/JuggernautROTS.jpg'
+					},
+					{
+						'name': 'Corporate Alliance tank droid',
+						'url': 'https://res.cloudinary.com/csicdn/image/upload/c_pad,fl_lossy,h_350,q_auto,w_350/v1/Images/Products/Misc%20Art/Star%20Wars%20Miniatures/full/BH003.jpg'
+					},
+					{
+						'name': 'Droid gunship',
+						'url': 'https://static.wikia.nocookie.net/esstarwars/images/6/6d/DroidGunship-DB.png'
+					},
+					{
+						'name': 'AT-RT',
+						'url': 'https://i.pinimg.com/originals/d3/bf/39/d3bf39eb2fbf06fa8d545eaeb3f15d9a.jpg'
 					}
 				],
 				planets: [
