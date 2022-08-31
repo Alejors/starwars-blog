@@ -18,8 +18,8 @@ export const Carousel = props => {
                                 <div key={i} className={"carousel-item " + ((i === 0 ? ' active' : ''))}>
                                     <img src={ele.url} className="d-block w-100" alt={ele.name} />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <h5>{ele.name}</h5>
-                                        <p>Take a deeper look at the {definition} of starwars</p>
+                                        <h5 className="carrusel">{ele.name}</h5>
+                                        <p className="carrusel">Take a deeper look at the {definition} of starwars</p>
                                     </div>
                                 </div>
                             )

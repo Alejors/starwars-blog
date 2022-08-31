@@ -17,7 +17,7 @@ export const Individual = props => {
             <h1 className="ms-2">
                 learn more about:
             </h1>
-            <div id="individualinfo" className="row m-2 bg-secondary bg-opacity-75 overflow-scroll">
+            <div id="individualinfo" className="row m-2 bg-secondary bg-opacity-75 individual-card">
                 <div className="col-md-6 px-0">
                     <img id='individualimage' className="img-fluid" src={found.url} />
                 </div>

@@ -1,0 +1,13 @@
+.starwars{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 42px;
+}
+
+.nav-link{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 28px;
+}
+
+input[type='search']{
+    width: 250px;
+}

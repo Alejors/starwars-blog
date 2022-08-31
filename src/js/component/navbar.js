@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import '../../styles/navbar.css';
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -9,8 +10,8 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container-fluid">
         <Link className="text-decoration-none" to="/">
-          <span className="navbar-brand">
-            starwars
+          <span className="navbar-brand starwars">
+            Starwars
           </span>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
@@ -28,6 +29,7 @@ export const Navbar = () => {
               Planets
             </Link>
           </div>
+          <input className="form-control me-1 float-right" type="search" placeholder="Search" aria-label="Search"></input>
         </div>
         <span className="nav-item dropdown float-right">
           <a className="nav-link dropdown-toggle text-alert" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
